@@ -1,0 +1,205 @@
+/* called the CSS reset. Removes any built-in padding and margins on elements. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'AventaBold';
+    src: url(./assets/font/Aventa-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+
+body {
+    background: url(https://livecirkle.qa.retrocubedev.com/images/bodybg.png) no-repeat center;
+    background-size: cover;
+    /* sets minimum height to full vh, and allows that to extend as content grows 
+    Also, since no height has been set for html, this full vh is taken as default by the html element as well */
+    min-height: 100vh;
+
+    /* avoids horizontal scroll bar that may show up if 100vw is set and body content exceeds 100vh.
+    Happens because when content exceeds 100vh, a 10pixel vertical scroll bar appears on page which is not accounted for by 100vw
+    The browser tries to still display the entire content width-wise, hence the horizontal bar */
+    width: 100%;
+    overflow-x: hidden;
+    border: 2px solid red;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 8px;
+}
+
+.nav-link:hover {
+    border-bottom: solid 1px green;
+    width: fit-content;
+    transition: all 0.5s;
+}
+
+.dropdown button {
+    color: white;
+}
+
+.login {
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background: green;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'AventaBold';
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.main-search {
+    margin: 8% 0;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.search input {
+    height: 60px;
+    width: 650px;
+    padding-left: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.search input:focus {
+    text-indent: 45px;
+    box-shadow: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(10, 10, 44);
+}
+
+input::placeholder {
+    text-indent: 7%;
+}
+
+.search .search-icon {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+.search button {
+    position: absolute;
+    top: 9px;
+    right: 25px;
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    color: white;
+    background: green;
+}
+
+.p-text {
+    color: grey;
+    width: 53vw;
+    line-height: 1.79;
+}
+
+/* Gives a margin of top and bottom of 15px and display block to all children of main-search div
+You do not need a display of block if all children already have that type as default */
+.main-search > * {
+    display: block;
+    margin: 15px 0;
+}
+
+.img-box {
+    margin: 15px;
+}
+
+
+.footer-container {
+    margin: 100px 0 30px;
+}
+
+.copyright {
+    background-color: #11163c;
+}
+
+.copyright a, footer ul{
+    text-decoration: none;
+    color: grey;
+}
+
+.profile-img {
+    height: 20px;
+    width: 20px;
+}
+
+[player-name]::before{
+    content: attr(player-name);
+    border: 1px green solid;
+}
+/* removes the caret symbol in dropdowns */
+.caret-off::before {
+    display: none;
+}
+
+.caret-off::after {
+    display: none;
+}
+
+.slick-dots {
+    position: relative;
+    top: 40px;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+    width: fit-content;
+}   
+
+.slick-dots li button{
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%);
+    background-color: #696980;
+    padding: 0;
+    width: 30px;
+    height: 2px;
+    /* sends the pesky dots off-screen */
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button{
+    background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 1399px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <!-- bootstrap local css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-slider/slick/slick-theme.css">
+    <!-- personal local css -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>LiveCirkle</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="https://livecirkle.qa.retrocubedev.com/images/logo.png" alt="Logo">
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-icons">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="nav-icons">
+                <div class="navbar-nav w-100 justify-content-end align-items-center">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">My Games</a>
+                    <a href="#" class="nav-link">Live Streaming</a>
+                    <a href="#" class="nav-link">Contact Us</a>
+
+                    <!-- Removing the -toggle from dropdown-toggle class removes the arrow but keeps the border -->
+                    <button type="button" class="dropdown-toggle caret-off btn m-2" data-bs-toggle="dropdown">
+                       <img src="https://livecirkle.qa.retrocubedev.com/images/bell.png" alt="">
+                    </button>
+                    <div class="dropdown m-2">
+                        <button type="button" class="dropdown-toggle caret-off btn" player-name="Pete315" data-bs-toggle="dropdown" id="dropdown-options" aria-expanded="false">
+                            <div class="profile-img">
+                                <img src="https://livecirkle.qa.retrocubedev.com/images/player1.jpg" class="img-fluid">
+                            </div>
+                        </button>
+                        
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown-options">
+                            <li><a href="#" class="dropdown-item">My Account</a></li>
+                            <li><a href="#" class="dropdown-item">Digital Wallet</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn login">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="d-flex flex-column align-items-center justify-content-center main-search">
+                <h1>Who's In Your Cirkle</h1>
+                <div class="d-flex justify-content-center align-items-center p-3 m-4">
+                    <form>
+                        <div class="search">
+                            <div class="search-icon">
+                                <img src="https://livecirkle.qa.retrocubedev.com/images/search.png">
+                            </div>
+                            <input type="search" placeholder="Search for Player, Game or Event">
+                            <button class="btn">Search</button>
+                        </div>
+                    </form>
+
+                </div>
+                <p class="p-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </section>
+
+        <section class="live-virtual-slider">
+            <div class="container">
+                <h2 class="ms-3 mb-5">Live Virtual Suites</h2>
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/nhl.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/madden.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/fifa.jpg" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/madden.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/fifa.jpg" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/nhl.png" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="live-streaming-slider">
+            <div class="container">
+                <h2 class="mt-5 mb-5 ms-3">Streaming Right Now</h2>
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/nhl.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/madden.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/fifa.jpg" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/madden.png" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/fifa.jpg" class="img-fluid w-100">
+                    </div>
+                    <div class="img-box">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/nhl.png" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="d-flex">
+                    <div class="col-sm-12 col-lg-3 me-auto">
+                        <img src="https://livecirkle.qa.retrocubedev.com/images/footer-logo.png" alt="Logo" class="mt-4 mb-4">
+                        <p class="text-secondary w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 offset-lg-2 p-2 me-5">
+                        <h3 class="mt-4 mb-4">Links</h3>
+                        <ul class="list-unstyled">
+                            <li class="m-3 ms-0"><a>About</a></li>
+                            <li class="m-3 ms-0"><a>Live Streaming</a></li>
+                            <li class="m-3 ms-0"><a>Contact Us</a></li>
+                            <li class="m-3 ms-0"><a>FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-2 me-5">
+                        <h3 class="mt-4 mb-4">Follow</h3>
+                        <ul class="list-unstyled">
+                            <li class="m-3 ms-0"><a>Facebook</a></li>
+                            <li class="m-3 ms-0"><a>Instagram</a></li>
+                            <li class="m-3 ms-0"><a>Twitter</a></li>
+                            <li class="m-3 ms-0"><a>YouTube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-2 me-5">
+                        <h3 class="mt-4 mb-4">Location</h3>
+                        <p class="p-text w-75">6225 N. State Highway 161 Suite 300 Irving, Texas 75038</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="container">
+            <div class="d-flex copyright align-items-center justify-content-center">
+                <p class="me-auto mb-2 text-white">All Rights Reserved @ LiveCirkle 2022</p>
+                <a class="p-2 mb-2">Terms & Conditions</a>
+                <a class="p-2 mb-2">Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- jQuery google CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick slider js. jQuery should be included above for this to work -->
+    <script type="text/javascript" src="./assets/slick-slider/slick/slick.min.js"></script>
+    <!-- <script src="assets/slick/slick-script.js"></script> -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.slider').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        // $('.slider').slick({
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 3,
+        //     dots: true
+        // });
+
+    });</script>
+</body> 
+</html>
